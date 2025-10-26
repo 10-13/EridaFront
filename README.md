@@ -9,6 +9,10 @@
 - Technologies: WASM, WebGL
 - Languages: JavaScript, Rust, C, HTML, CSS
 
+### Server Interactions
+For detailed server intactions see Server API List in Details.
+
 ### Details
 - [Pages prototypes in Figma.](https://www.figma.com/design/2VEMZt0elSPHC7pmqaUS7Y/DocsProject?node-id=5-639&t=sHDlEc0UZZuuk3XV-1)
 - [Server API list.](https://github.com/KrakenGog/DocumentAppBackend/blob/main/README.md)
+
