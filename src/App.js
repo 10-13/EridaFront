@@ -1,10 +1,10 @@
-// src/App.js
+
 import React from 'react';
-// Добавляем импорт Navigate
+
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 
-// ... импорты ваших страниц ...
+
 import EnterPage from './EnterPage';
 import TablesPage from './TablesPage';
 import ChatPage from './ChatPage';

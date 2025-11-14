@@ -1,23 +1,23 @@
-// --- START OF FILE MessageInput.js ---
+
 
 import React, { useState } from 'react';
 import Card from './Card';
 
-// Получаем onSend как prop для отправки сообщения родителю
+
 function MessageInput({ onSend }) {
-  // Состояние для хранения текста в поле ввода
+  
   const [text, setText] = useState('');
 
   const handleSendClick = () => {
-    // Не отправляем пустое сообщение
+    
     if (text.trim()) {
       onSend(text);
-      setText(''); // Очищаем поле ввода после отправки
+      setText(''); 
     }
   };
 
   const handleKeyPress = (event) => {
-    // Отправка по нажатию Enter
+    
     if (event.key === 'Enter') {
       handleSendClick();
     }
@@ -32,12 +32,12 @@ function MessageInput({ onSend }) {
           className="control-element"
           value={text}
           onChange={(e) => setText(e.target.value)}
-          onKeyPress={handleKeyPress} // Добавляем обработчик нажатия клавиш
+          onKeyPress={handleKeyPress} 
         />
         <button
           className="control-element"
           style={{ width: '40px', height: '40px' }}
-          onClick={handleSendClick} // Добавляем обработчик клика
+          onClick={handleSendClick} 
         >
           {'>'}
         </button>
